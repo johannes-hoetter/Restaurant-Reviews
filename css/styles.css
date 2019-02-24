@@ -255,7 +255,6 @@ nav h1 a {
   padding-bottom: 1pt;
 }
 #reviews-list {
-  max-width: 375px;
   margin: 0;
   padding: 0;
 }
@@ -285,11 +284,24 @@ nav h1 a {
     display: none;
   }
 
+  #restaurant-container {
+    width: 100%;
+  }
+
+  #reviews-container {
+    width: 100%;
+  }
+
   #breadcrumb {
     width: 100%;
   }
 }
 
 /* wenn in der Einzelansicht eine Weite von weniger als 1150 erreicht wurde, muss die Kartengröße reduziert werden;*/
+@media screen and (min-width: 831px) {
 
+  #reviews-list {
+    max-width: 90%;
+  }
+}
 
