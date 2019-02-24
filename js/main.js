@@ -210,3 +210,10 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 } */
 
+/* Adding a service worker */
+// https://developer.mozilla.org/en-US/docs/Web/API/Navigator/serviceWorker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('Service Worker has been successfully registered!'))
+      .catch(err => console.log('An error occurred while registering the service worker:', err));
+}
